@@ -1,5 +1,5 @@
 # Multi-Agent-Conversational-AI-for-Information-Retrieval
-This project implements a multi-agent conversational system that retrieves information from documents and generates intelligent responses using OpenAI’s GPT-3.5-turbo. It uses ChromaDB to store and search embeddings generated from pre-defined documents. The system is optimized through caching mechanisms and autonomous agents for efficient question-answering tasks.
+This project implements a multi-agent conversational system that retrieves information from documents and generates intelligent responses using OpenAI’s GPT-4o. It uses ChromaDB to store and search embeddings generated from pre-defined documents. The system is optimized through caching mechanisms and autonomous agents for efficient question-answering tasks.
 The documents used for the retrieval process were sourced from the following GitHub repository:
 https://github.com/Azure-Samples/azure-search-sample-data/tree/main/nasa-e-book/earth-txt-10
 
@@ -37,7 +37,7 @@ Astuce :
 
 # Technologies Used
 -  Python: Primary programming language.
--  OpenAI GPT-3.5-turbo: For generating intelligent, context-based answers.
+-  OpenAI GPT-4o: For generating intelligent, context-based answers.
 -  ChromaDB: Vector database used to store and search embeddings.
 -  Sentence Transformers: Pre-trained models to encode sentences into embeddings (all-mpnet-base-v2).
 -  Autogen: To manage and create the conversational agents.
@@ -68,7 +68,7 @@ Copy code
 pip install pyautogen sentence_transformers markdownify pypdf chromadb==0.5.0
 ```
 
-Configure OpenAI API Key: You will need an OpenAI API key to use GPT-3.5-turbo. In the project, the API key is retrieved from Google Colab’s userdata:
+Configure OpenAI API Key: You will need an OpenAI API key to use GPT-4o. In the project, the API key is retrieved from Google Colab’s userdata:
 
 ```python
 Copy code
@@ -99,7 +99,7 @@ query = "What is the impact of volcanic eruptions on cloud formation?"
 
 -  Query Execution: The user’s query is transformed into embeddings and matched against the document embeddings stored in the vector database to find relevant information.
 
--  Response Generation: Once the most relevant document segments are retrieved, GPT-3.5-turbo generates a well-formatted response based on the content.
+-  Response Generation: Once the most relevant document segments are retrieved, GPT-4o generates a well-formatted response based on the content.
 
 
 
