@@ -11,7 +11,6 @@ https://github.com/Azure-Samples/azure-search-sample-data/tree/main/nasa-e-book/
 -  Installation
 -  Usage
 -  How It Works
--  Future Improvements
 -  Contributing
 -  License
 
@@ -103,11 +102,6 @@ query = "What is the impact of volcanic eruptions on cloud formation?"
 -  Response Generation: Once the most relevant document segments are retrieved, GPT-3.5-turbo generates a well-formatted response based on the content.
 
 
-# Future Improvements
-Add a user interface to make the system more interactive and user-friendly.
-Extend document support to include other file formats such as .pdf or .docx.
-Improve the variety and complexity of questions the agents can handle.
-Implement a real-time chat interface for continuous conversation.
 
 # Contributing
 If you want to contribute to this project, feel free to fork the repository and submit a pull request. You can also open issues for any bugs or feature requests.
