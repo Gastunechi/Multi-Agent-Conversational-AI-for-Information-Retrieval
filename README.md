@@ -1,5 +1,7 @@
 # Multi-Agent-Conversational-AI-for-Information-Retrieval
 This project implements a multi-agent conversational system that retrieves information from documents and generates intelligent responses using OpenAI’s GPT-3.5-turbo. It uses ChromaDB to store and search embeddings generated from pre-defined documents. The system is optimized through caching mechanisms and autonomous agents for efficient question-answering tasks.
+The documents used for the retrieval process were sourced from the following GitHub repository:
+https://github.com/Azure-Samples/azure-search-sample-data/tree/main/nasa-e-book/earth-txt-10
 
 # Table of Contents
 -  Project Overview
