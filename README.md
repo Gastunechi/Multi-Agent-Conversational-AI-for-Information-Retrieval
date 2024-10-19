@@ -5,6 +5,7 @@ https://github.com/Azure-Samples/azure-search-sample-data/tree/main/nasa-e-book/
 
 # Table of Contents
 -  Project Overview
+-  How it works?
 -  Technologies Used
 -  Features
 -  Installation
@@ -18,6 +19,22 @@ https://github.com/Azure-Samples/azure-search-sample-data/tree/main/nasa-e-book/
 This project demonstrates how to build a question-answering system using multiple agents. The system retrieves information from documents (in this case, text files related to NASA publications) and responds to questions posed by the user. It utilizes pre-trained language models to encode and search the documents in a vector database, leveraging ChromaDB for efficient retrieval.
 
 The project is built with a focus on scalability, agent-based architecture, and performance optimization using disk-based caching.
+
+# How it works?
+The following diagram illustrates the workflow of the multi-agent system:
+
+![Workflow Diagram](https://github.com/Gastunechi/Multi-Agent-Conversational-AI-for-Information-Retrieval/blob/main/workflow.jpg)
+
+- **Data Sources**: The system retrieves data from various documents.
+- **Chunking**: The data is divided into smaller pieces for efficient processing.
+- **Embedding Model**: These chunks are converted into vector embeddings using a pre-trained model.
+- **Vector Database**: The embeddings are stored in a vector database for fast similarity searches.
+- **User Prompt**: The user's query is processed and compared to the embeddings in the vector database.
+- **Similarity Search**: The most relevant document chunks are retrieved based on similarity to the user’s query.
+- **LLM**: The retrieved information, combined with the user’s query, is passed to a large language model to generate a relevant answer.
+Astuce :
+
+
 
 # Technologies Used
 -  Python: Primary programming language.
