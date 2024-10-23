@@ -57,21 +57,18 @@ Astuce :
 Clone the repository:
 
 ```bash
-Copy code
 git clone https://github.com/yourusername/multi-agent-qa-retrieval.git
 cd multi-agent-qa-retrieval
 ```
 
 Install required dependencies: You can install the necessary Python packages with the following command:
 ```bash
-Copy code
 pip install pyautogen sentence_transformers markdownify pypdf chromadb==0.5.0
 ```
 
 Configure OpenAI API Key: You will need an OpenAI API key to use GPT-4o. In the project, the API key is retrieved from Google Colab’s userdata:
 
 ```python
-Copy code
 "api_key": userdata.get('OPENAI_API_KEY')
 ```
 
@@ -107,4 +104,4 @@ query = "What is the impact of volcanic eruptions on cloud formation?"
 If you want to contribute to this project, feel free to fork the repository and submit a pull request. You can also open issues for any bugs or feature requests.
 
 # License
-This project is licensed under the MIT License. See the LICENSE file for more information.
+This project is licensed under the MIT License
